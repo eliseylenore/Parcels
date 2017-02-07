@@ -1,0 +1,15 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+  <h1>Parcels</h1>
+  <p>Width: @Model.GetWidth()</p>
+  <p>Length: @Model.GetLength()</p>
+  <p>Height: @Model.GetHeight()</p>
+  <p>Weight: @Model.GetWeight()</p>
+  <p>Volume: @Model.CalculateVolume()</p>
+
+  <h2>Price for shipping: $@Model.CalculatePrice()</h2>
+</div>
